@@ -12,7 +12,7 @@ async function sendMail({from, to, subject, text, html}){
     });
 
     let info = await transporter.sendMail({
-        from: `inShare <${from}>`,
+        from: `myShare <${from}>`,
         to: to,
         subject: subject,
         text: text,
